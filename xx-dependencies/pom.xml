@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.template</groupId>
+        <artifactId>xx-bom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../xx-bom</relativePath>
+    </parent>
+
+
+    <artifactId>xx-dependencies</artifactId>
+    <packaging>pom</packaging>
+    <description>
+        外部依赖版本统一管理
+    </description>
+
+    <properties>
+        <!--功能依赖版本-->
+
+        <!--测试依赖版本-->
+        <junit.version>4.13</junit.version>
+
+        <assertj.version></assertj.version>
+
+
+        <!--插件依赖版本-->
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
