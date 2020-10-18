@@ -6,44 +6,35 @@
 
     <parent>
         <groupId>org.template</groupId>
-        <artifactId>xx-bom</artifactId>
+        <artifactId>xx-project</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../xx-bom</relativePath>
     </parent>
 
-
+    <name>[02]dependencies</name>
     <artifactId>xx-dependencies</artifactId>
     <packaging>pom</packaging>
     <description>
-        外部依赖版本统一管理
+        Bill of dependencies.
+        Manage all eternal lib dependencies here.
     </description>
 
     <properties>
-        <!--功能依赖版本-->
+        <!--External dependencies-->
 
-        <!--测试依赖版本-->
+        <!--Test dependencies-->
         <junit.version>4.13</junit.version>
 
-        <assertj.version></assertj.version>
-
-
-        <!--插件依赖版本-->
     </properties>
 
 
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
         </dependencies>
-
     </dependencyManagement>
 
-
-    <build>
-        <pluginManagement>
-            <plugins>
-
-            </plugins>
-        </pluginManagement>
-    </build>
 </project>
